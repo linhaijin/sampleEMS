@@ -1,0 +1,137 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7977F933-8116-4E65-822D-20FF949820DC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>myems</RootNamespace>
+    <AssemblyName>myems</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Administrator\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <ApplicationIcon>ICON\001_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseClass" />
+    <Folder Include="BaseInfo" />
+    <Folder Include="DataManage" />
+    <Folder Include="Equipment" />
+    <Folder Include="ICON" />
+    <Folder Include="Properties" />
+    <Folder Include="SystemSet" />
+    <Compile Include="BaseClass\DataBase.cs" />
+    <Compile Include="BaseClass\Operation.cs" />
+    <Compile Include="BaseInfo\frmBaseInfo.cs" />
+    <Compile Include="BaseInfo\frmBaseInfo.Designer.cs" />
+    <Compile Include="BaseInfo\frmBaseNumber.cs" />
+    <Compile Include="BaseInfo\frmBaseNumber.Designer.cs" />
+    <Compile Include="BaseInfo\frmBaseSort.cs" />
+    <Compile Include="BaseInfo\frmBaseSort.Designer.cs" />
+    <Compile Include="BaseInfo\frmDataGridViewSetVisible.cs" />
+    <Compile Include="BaseInfo\frmDataGridViewSetVisible.Designer.cs" />
+    <Compile Include="DataManage\frmBakDataBase.cs" />
+    <Compile Include="DataManage\frmBakDataBase.Designer.cs" />
+    <Compile Include="DataManage\frmNewSystem.cs" />
+    <Compile Include="DataManage\frmNewSystem.Designer.cs" />
+    <Compile Include="Equipment\frmEquimentSum.cs" />
+    <Compile Include="Equipment\frmEquimentSum.Designer.cs" />
+    <Compile Include="Equipment\frmEquipmentClear.cs" />
+    <Compile Include="Equipment\frmEquipmentClear.Designer.cs" />
+    <Compile Include="Equipment\frmEquipmentClearFind.cs" />
+    <Compile Include="Equipment\frmEquipmentClearFind.Designer.cs" />
+    <Compile Include="Equipment\frmEquipmentInsert.cs" />
+    <Compile Include="Equipment\frmEquipmentInsert.Designer.cs" />
+    <Compile Include="Equipment\frmEquipmentUpdate.cs" />
+    <Compile Include="Equipment\frmEquipmentUpdate.Designer.cs" />
+    <Compile Include="frmLogin.cs" />
+    <Compile Include="frmLogin.Designer.cs" />
+    <Compile Include="frmMain.cs" />
+    <Compile Include="frmMain.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="SystemSet\frmUnits.cs" />
+    <Compile Include="SystemSet\frmUnits.Designer.cs" />
+    <Compile Include="SystemSet\frmUser.cs" />
+    <Compile Include="SystemSet\frmUser.Designer.cs" />
+    <EmbeddedResource Include="BaseInfo\frmBaseInfo.resx" />
+    <EmbeddedResource Include="BaseInfo\frmBaseNumber.resx" />
+    <EmbeddedResource Include="BaseInfo\frmBaseSort.resx" />
+    <EmbeddedResource Include="BaseInfo\frmDataGridViewSetVisible.resx" />
+    <EmbeddedResource Include="DataManage\frmBakDataBase.resx" />
+    <EmbeddedResource Include="DataManage\frmNewSystem.resx" />
+    <EmbeddedResource Include="Equipment\frmEquimentSum.resx" />
+    <EmbeddedResource Include="Equipment\frmEquipmentClear.resx" />
+    <EmbeddedResource Include="Equipment\frmEquipmentClearFind.resx" />
+    <EmbeddedResource Include="Equipment\frmEquipmentInsert.resx" />
+    <EmbeddedResource Include="Equipment\frmEquipmentUpdate.resx" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="SystemSet\frmUnits.resx" />
+    <EmbeddedResource Include="SystemSet\frmUser.resx" />
+    <None Include="app.config" />
+    <None Include="ICON\01.ico" />
+    <None Include="ICON\1.ico" />
+    <None Include="ICON\172.ico" />
+    <None Include="ICON\2.ico" />
+    <None Include="ICON\3.ico" />
+    <None Include="ICON\42.ico" />
+    <None Include="ICON\ADD.ico" />
+    <None Include="ICON\BAK.ico" />
+    <None Include="ICON\bak1.ico" />
+    <None Include="ICON\bakup.ico" />
+    <None Include="ICON\CLEAR.ico" />
+    <None Include="ICON\del.ico" />
+    <None Include="ICON\DEPETE.ico" />
+    <None Include="ICON\exe.ico" />
+    <None Include="ICON\exit.ico" />
+    <None Include="ICON\exit1.ico" />
+    <None Include="ICON\exit2.ico" />
+    <None Include="ICON\FIND.ico" />
+    <None Include="ICON\find1.ico" />
+    <None Include="ICON\find2.ico" />
+    <None Include="ICON\findall.ico" />
+    <None Include="ICON\JBZL.ico" />
+    <None Include="ICON\Login.ico" />
+    <None Include="ICON\refresh.ico" />
+    <None Include="ICON\refresh1.ico" />
+    <None Include="ICON\TJDQ.ico" />
+    <None Include="ICON\UPDATE.ico" />
+    <None Include="ICON\ZJHS.ico" />
+    <None Include="Properties\Settings.settings" />
+    <None Include="readme.txt" />
+  </ItemGroup>
+</Project>
